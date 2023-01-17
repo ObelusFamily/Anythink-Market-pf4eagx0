@@ -127,13 +127,15 @@ class Profile extends React.Component {
       <div className="profile-page">
         <div className="container">
           <div className="row p-4 text-center">
-            <div className="user-info col-xs-12 col-md-8 offset-md-2">
+            {/* user-info col-xs-12 col-md-8 offset-md-2 */}
+            <div className="container-fluid">
               <img
                 src={profile.image}
                 className="user-img"
                 alt={profile.username}
               />
-              <h4 className="py-2">{profile.username}</h4>
+              {/* py-2 */}
+              <h4 className="container-fluid">{profile.username}</h4> 
               <p>{profile.bio}</p>
 
               <EditProfileSettings isUser={isUser} />
